@@ -78,7 +78,7 @@ public class Resource {
     public Map<String, Object> getMetadata() {
         return metadata;
     }
-
+    
     /**
      * This method gives information about all the specified details on resource components. 
      * @return all the resource specification components in Ceilometer model.

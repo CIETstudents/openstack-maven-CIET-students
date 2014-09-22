@@ -160,7 +160,7 @@ public class Statistics {
     public BigDecimal getSum() {
         return sum;
     }
-
+    
     /**
      * This method gives information about all the specified details of
      * Statistics components.

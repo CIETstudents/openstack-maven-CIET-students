@@ -176,7 +176,7 @@ public class Sample {
     public Map<String, Object> getMetadata() {
         return metadata;
     }
-
+    
     /**
      * This method gives sample information about all the specified details of
      * Ceilometer.

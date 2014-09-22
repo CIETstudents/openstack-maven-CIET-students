@@ -9,6 +9,7 @@
 	<name>OpenStack Ceilometer Model</name>
 	<description>OpenStack Ceilometer Model</description>
     <dependencies>
+        
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
