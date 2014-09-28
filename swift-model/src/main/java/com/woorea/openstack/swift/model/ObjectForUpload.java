@@ -4,69 +4,96 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * This class is to store collected information.
+ *
+ * @author Mona.
+ */
 public class ObjectForUpload {
-	
-	private String container;
-	
-	private String name;
-	
-	private Map<String, java.lang.Object> properties;
 
-	private InputStream inputStream;
+    /**
+     * Use to map multiple group elements in to single group.
+     */
+    private String container;
 
-	/**
-	 * @return the container
-	 */
-	public String getContainer() {
-		return container;
-	}
+    /**
+     * Get user name.
+     */
+    private String name;
 
-	/**
-	 * @param container the container to set
-	 */
-	public void setContainer(String container) {
-		this.container = container;
-	}
+    /**
+     * Map default object properties in the method.
+     */
+    private Map<String, java.lang.Object> properties;
 
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+    /**
+     * InputStream is to read byte based data.
+     */
+    private InputStream inputStream;
 
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+    /**
+     * use the method to add various elements.
+     *
+     * @return container.
+     */
+    public String getContainer() {
+        return container;
+    }
 
-	/**
-	 * @return the properties
-	 */
-	public Map<String, java.lang.Object> getProperties() {
-		if(properties == null) {
-			properties = new HashMap<String, java.lang.Object>();
-		}
-		return properties;
-	}
+    /**
+     * use the method to assign added values to added elements.
+     *
+     * @param container as set.
+     */
+    public void setContainer(String container) {
+        this.container = container;
+    }
 
-	/**
-	 * @return the inputStream
-	 */
-	public InputStream getInputStream() {
-		return inputStream;
-	}
+    /**
+     * pass user name.
+     *
+     * @return name.
+     */
+    public String getName() {
+        return name;
+    }
 
-	/**
-	 * @param inputStream the inputStream to set
-	 */
-	public void setInputStream(InputStream inputStream) {
-		this.inputStream = inputStream;
-	}
+    /**
+     * assign user name.
+     *
+     * @param name as set.
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	
+    /**
+     * Map properties values equal to null.
+     *
+     * @return properties.
+     */
+    public Map<String, java.lang.Object> getProperties() {
+        if (properties == null) {
+            properties = new HashMap<String, java.lang.Object>();
+        }
+        return properties;
+    }
 
+    /**
+     * Pass date or time.
+     *
+     * @return inputStream.
+     */
+    public InputStream getInputStream() {
+        return inputStream;
+    }
+
+    /**
+     * Set date or time in the method.
+     *
+     * @param inputStream as set.
+     */
+    public void setInputStream(InputStream inputStream) {
+        this.inputStream = inputStream;
+    }
 }

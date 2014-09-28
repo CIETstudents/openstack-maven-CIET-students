@@ -2,40 +2,56 @@ package com.woorea.openstack.swift.model;
 
 import java.io.InputStream;
 
-
-
+/**
+ * This class shows object and input values from user.
+ *
+ * @author Mona.
+ */
 public class ObjectDownload {
 
-	private Object object;
-	
-	private InputStream inputStream;
+    /**
+     * object datatype is to store large amount data along with methods.
+     */
+    private Object object;
 
-	/**
-	 * @return the object
-	 */
-	public Object getObject() {
-		return object;
-	}
+    /**
+     * inputStream data type is to read byte based data.
+     */
+    private InputStream inputStream;
 
-	/**
-	 * @param object the object to set
-	 */
-	public void setObject(Object object) {
-		this.object = object;
-	}
+    /**
+     * get space to store data from user.
+     *
+     * @return object.
+     */
+    public Object getObject() {
+        return object;
+    }
 
-	/**
-	 * @return the inputStream
-	 */
-	public InputStream getInputStream() {
-		return inputStream;
-	}
+    /**
+     * set space to store data already get from user.
+     *
+     * @param object as set
+     */
+    public void setObject(Object object) {
+        this.object = object;
+    }
 
-	/**
-	 * @param inputStream the inputStream to set
-	 */
-	public void setInputStream(InputStream inputStream) {
-		this.inputStream = inputStream;
-	}
+    /**
+     * Get byte based data from user.
+     *
+     * @return inputStream.
+     */
+    public InputStream getInputStream() {
+        return inputStream;
+    }
 
+    /**
+     * Set byte based data from user.
+     *
+     * @param inputStream as set.
+     */
+    public void setInputStream(InputStream inputStream) {
+        this.inputStream = inputStream;
+    }
 }
