@@ -35,6 +35,7 @@
 		<module>ceilometer-client</module>
 		<module>openstack-client-connectors</module>
         <module>heat-model</module>
+	 <module>Cinder</module>
 	</modules>
 
 	<profiles>
